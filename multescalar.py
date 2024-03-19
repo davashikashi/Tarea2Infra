@@ -12,8 +12,7 @@ fun.vectorScalarMultiply.restype = None
 
 vector =[]
 escalar = 2
-tamaño = 20 
-#10000000
+tamaño = 10000000
 
 for i in range(1,tamaño+1):
     vector.append(i)
