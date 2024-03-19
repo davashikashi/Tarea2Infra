@@ -1,4 +1,5 @@
 import ctypes
+import timeit
 
 #carga de la libreria
 fun = ctypes.CDLL("./libmultescalar.so")
@@ -13,7 +14,6 @@ vector =[]
 escalar = 2
 tamaño = 20 
 #10000000
-resultado = 0
 
 for i in range(1,tamaño+1):
     vector.append(i)
@@ -22,9 +22,16 @@ for i in range(1,tamaño+1):
 vector_c = (ctypes.c_double * len(vector))(*vector)
 resultado_c = (ctypes.c_double * len(vector))()
 
+#tomamos el tiempo solo cuando se hace la multiplicacion escalar
+startingTime = timeit.default_timer()
 # Llamando a la función
 fun.vectorScalarMultiply(vector_c, escalar, resultado_c, tamaño)
 
-# Mostrando resultados
-print("Original:", list(vector_c))
-print("nuevo:", list(resultado_c))
+endingTime = timeit.default_timer()
+
+# Mostrando resultados vectores y tiempo
+
+#print("Original:", list(vector_c))
+#print("nuevo:", list(resultado_c))
+
+print("El tiempo total fue de: ", endingTime - startingTime)
