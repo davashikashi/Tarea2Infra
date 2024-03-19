@@ -33,4 +33,4 @@ endingTime = timeit.default_timer()
 #print("Original:", list(vector_c))
 #print("nuevo:", list(resultado_c))
 
-print("El tiempo total fue de: ", endingTime - startingTime)
+print("El tiempo es de: ", endingTime - startingTime)
