@@ -15,3 +15,5 @@ para modificar el tamaño del vector solo es necesario modificar "tamaño" dentr
 el analisis de tiempo se realizo con timeit
 
 para ver si el programa fucniona solo hay que descomentar las lineas print para cada caso en .py
+
+Trabajo presentado por: Deison Aleixer Cardona Arias 1840261
