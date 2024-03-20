@@ -9,3 +9,9 @@ multescalar.py = caso de manejo avx en libreria dinamica
 multescalarIngenua.py = implementacion ingenua 
 
 multescalarNumpy = implementacion libreria Numpy
+
+para modificar el tamaño del vector solo es necesario modificar "tamaño" dentro de cada archivo .py
+
+el analisis de tiempo se realizo con timeit
+
+para ver si el programa fucniona solo hay que descomentar las lineas print para cada caso en .py
