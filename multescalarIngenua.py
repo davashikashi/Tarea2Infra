@@ -24,3 +24,6 @@ resultado = vector_scalar_multiply(vector, escalar)
 endingTime = timeit.default_timer()
 
 print("el tiempo es de: ", endingTime - startingTime)
+
+#print("original: ",vector)
+#print("resultado:", resultado)
